@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Result Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Online Result Management System</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="student.html">Student Section</a>
+    </nav>
+    <main>
+
+        <!-- Student Module -->
+        <section id="studentModule">
+            <h2>Student Module</h2>
+
+            <!-- Student Registration -->
+            <h3>Register</h3>
+            <form id="studentRegisterForm">
+                <input type="text" id="studentRegName" placeholder="Enter your name" required>
+                <select id="studentYear">
+                    <option value="First">First Year</option>
+                    <option value="Second">Second Year</option>
+                    <option value="Third">Third Year</option>
+                </select>
+                <input type="password" id="studentRegPassword" placeholder="Enter your password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <!-- Student Login -->
+            <h3>Login</h3>
+            <form id="studentLoginForm">
+                <input type="text" id="studentLoginID" placeholder="Enter your Student ID" required>
+                <input type="password" id="studentLoginPassword" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- View Result -->
+            <h3>View Result</h3>
+            <p>Enter your Student ID to view results:</p>
+            <input type="text" id="viewResultID" placeholder="Enter Student ID" required>
+            <button id="viewResultButton">View Result</button>
+            <div id="resultDisplay"></div>
+        </section>
+    </main>
+    <footer>
+        <span>Created By Prince & Sumit | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

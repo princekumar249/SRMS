@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Result Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Result Management System</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="teacher.html">Teacher Section</a>
+    </nav>
+    <main>
+        
+        <!-- Teacher Module -->
+        <section id="teacherModule">
+            <h2 style="text-align: center;">Registration</h2>
+
+            <!-- Teacher Registration -->
+            <h3>Register</h3>
+            <form id="teacherRegisterForm">
+                <input type="text" id="teacherName" placeholder="Enter your name" required>
+                <input type="email" id="teacherEmail" placeholder="Enter your email" required>
+                <input type="password" id="teacherPassword" placeholder="Enter your password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <!-- Teacher Login -->
+            <h2 style="text-align: center;">Login ID</h2>
+            <h3>Login</h3>
+            <form id="teacherLoginForm">
+                <input type="email" id="teacherLoginEmail" placeholder="Enter your email" required>
+                <input type="password" id="teacherLoginPassword" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Add Student Records -->
+            <h3>Add Student Records</h3>
+            <form id="addStudentForm">
+                <input type="text" id="studentID" placeholder="Student ID" required>
+                <input type="text" id="studentName" placeholder="Student Name" required>
+                <textarea id="subjectsMarks" placeholder="Enter subjects and marks (e.g., Math:85, Science:90)" rows="3" required></textarea>
+                <button type="submit">Add Record</button>
+            </form>
+
+            <h4>Student Records</h4>
+            <table id="studentRecordsTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Subjects & Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">No records available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+        <footer>
+            <span>Created By Prince & Sumit | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
